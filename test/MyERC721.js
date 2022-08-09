@@ -33,14 +33,7 @@ describe("MyERC721", function () {
             const myERC721 = await loadFixture(deployTokenFixture);
             const [, otherAccount] = await ethers.getSigners();
 
-            // TODO Implement test below
-
-            // Hint: You can call a function from a different account by using connect:
-            // await myERC721.connect(otherAccount).mint();
-            // Hint: It's possible to test that something reverts by using:
-            // expect(..).to.be.reverted;
-
-            expect(false, "TODO").to.be.true;
+            await expect(myERC721.connect(otherAccount).mint()).to.be.reverted;
         });
     });
 });
