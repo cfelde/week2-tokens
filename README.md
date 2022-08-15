@@ -6,6 +6,10 @@ As part of the exercise, make sure to complete the missing implementations in bo
 
 When done, you should be able to run all tests successfully.
 
+# NPM dependencies
+
+You might need to run `npm install` to download project dependencies.
+
 ## HardHat commands
 
 Compile everything by running `npx hardhat compile`
